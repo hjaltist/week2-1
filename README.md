@@ -176,3 +176,22 @@ required in production-ready clustered applications are not present.
 ## Links
 
 http://docs.aws.amazon.com/cli/latest/userguide/cli-ec2-launch.html
+
+
+# Assignment Summary
+
+We have created an instance on AWS with Docker installed and functioning but when we run "docker run -p 80:80 {image-name}" 
+an error is thrown during the migration. We have been working on the tictactoe trying to get it up and running with no luck.
+I am able to run the application on my computer (Ubuntu 16 running on a Lenovo) but am unable to create an instance of a 
+tictactoe game. 
+I had to change the ports being used to 1550 since 8080 threw a EADDRINUSE.
+
+Me and Sverrir are both Linux enthusiast, me running on Ubuntu (tried all distros, always come back to ubuntu) and Sverrir 
+running on Arch.
+We wasted alot of time trying to install Docker on the instance because we saw yum was being used as a packet manager and assumed
+this was a Red Hat instance. After hours of debugging we tried using the Amazon Linux realizing that it also used the yum packet 
+manager and successfully installed Docker.
+
+Sverrir is quite fluent in node and typescript and spent alot of time trying to debug the application as you can hopefully see
+from his push that will come in late since he does not have access to his computer until late tonight.
+
